@@ -5,11 +5,13 @@ from jinja2 import Environment, FileSystemLoader
 
 from gsuid_core.data_store import get_res_path
 
-MAIN_PATH = get_res_path() / "WuWaUID-OnlySign"
+MAIN_PATH = get_res_path() / "WutheringWavesUID"
+PLUGIN_PATH = get_res_path() / "WuWaUID-OnlySign"
+
 sys.path.append(str(MAIN_PATH))
 
 # 配置文件
-CONFIG_PATH = MAIN_PATH / "config.json"
+CONFIG_PATH = MAIN_PATH / "config_onlysign.json"
 
 # 用户数据保存文件
 PLAYER_PATH = MAIN_PATH / "players"
